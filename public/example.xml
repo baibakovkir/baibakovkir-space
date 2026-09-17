@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2026-09-17 00:00">
+  <shop>
+    <name>Демо-каталог поставщика</name>
+    <company>ООО «Пример»</company>
+    <url>https://example.com</url>
+    <currencies>
+      <currency id="RUB" rate="1" />
+    </currencies>
+    <categories>
+      <category id="books">Книги</category>
+      <category id="edu-books" parentId="books">Учебная литература</category>
+      <category id="office">Канцелярские товары</category>
+      <category id="paper" parentId="office">Бумага</category>
+      <category id="furniture">Мебель</category>
+      <category id="chairs" parentId="furniture">Офисные кресла</category>
+      <category id="cleaning">Хозяйственные товары</category>
+      <category id="detergents" parentId="cleaning">Моющие средства</category>
+    </categories>
+    <offers>
+      <!-- Книга: пример товара с описанием, изображениями и характеристиками. -->
+      <offer id="book-001">
+        <name>Математика. Учебник для 5 класса</name>
+        <vendor>Издательство «Пример»</vendor>
+        <country>Россия</country>
+        <vendorCode>BK-001</vendorCode>
+        <units>796</units>
+        <categoryId>edu-books</categoryId>
+        <description>Учебник по математике для учащихся 5 класса.</description>
+        <picture>https://example.com/images/book-001.jpg</picture>
+        <vat>22</vat>
+        <endDate>2027-08-31T23:59:59</endDate>
+        <param name="Класс">5</param>
+        <param name="Переплёт">Твёрдый</param>
+        <price>850.00</price>
+        <regions>
+          <region id="77" transportCost="0">г. Москва</region>
+          <region id="34" transportCost="250">Волгоградская область</region>
+        </regions>
+        <quantity>120</quantity>
+      </offer>
+
+      <!-- Цена может быть указана у товара без списка регионов. -->
+      <offer id="paper-001">
+        <name>Бумага офисная А4, 500 листов</name>
+        <vendor>Бумажная фабрика</vendor>
+        <categoryId>paper</categoryId>
+        <price>420.50</price>
+        <vat>22</vat>
+        <param name="Формат">А4</param>
+        <param name="Плотность, г/м²">80</param>
+      </offer>
+
+      <!-- Если price у товара отсутствует, парсер использует цену первого региона. -->
+      <offer id="chair-001">
+        <name>Кресло офисное с регулируемой высотой</name>
+        <vendor>Мебельная компания</vendor>
+        <country_of_origin>Россия</country_of_origin>
+        <categoryId>chairs</categoryId>
+        <regions>
+          <region id="77" transportCost="500" price="12500.00">г. Москва</region>
+          <region id="50" transportCost="700">Московская область</region>
+        </regions>
+        <count>15</count>
+      </offer>
+
+      <!-- Описание и необязательные характеристики могут отсутствовать. -->
+      <offer id="cleaner-001">
+        <name>Средство для мытья полов, 1 л</name>
+        <categoryId>detergents</categoryId>
+        <price>310</price>
+        <param name="Объём">1 л</param>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>
