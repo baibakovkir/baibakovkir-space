@@ -26,7 +26,7 @@ yarn build
 
 Pushes to `main` run checks, publish an immutable image to GHCR, then deploy over SSH. Configure these secrets in the GitHub `production` environment:
 
-- `VM_HOST` — VPS address (`176.123.163.174`)
+- `VM_HOST` — VPS address
 - `VM_USER` — SSH login user
 - `VM_SSH_KEY` — private key contents for the deployment key (for example, the contents of `id_rsa`)
 - `VM_KNOWN_HOSTS` — pinned SSH host key entry for the VPS
