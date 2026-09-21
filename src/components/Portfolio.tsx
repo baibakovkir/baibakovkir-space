@@ -83,7 +83,6 @@ export default function Portfolio() {
             <a className="button-primary" href="#work">{t.explore}<span aria-hidden="true">↘</span></a>
             <span className="hero-location">{t.location}</span>
           </div>
-          <a className="scroll-cue" href="#about"><span className="scroll-line" />{t.scroll}</a>
         </div>
         <div className="hero-visual">
           <PortraitScene />
@@ -162,7 +161,7 @@ export default function Portfolio() {
         <div className="section-marker">{t.contactLabel}</div>
         <div className="contact-panel">
           <div><h2>{t.contactTitle}</h2><p>{t.contactText}</p></div>
-          <a className="button-primary contact-button" href="https://github.com/baibakovkir" target="_blank" rel="noreferrer">{t.contactButton}<span aria-hidden="true">↗</span></a>
+          <a className="button-primary contact-button" href="mailto:baibakovkir@yandex.ru">{t.contactButton}<span aria-hidden="true">↗</span></a>
           <span className="contact-orbit contact-orbit-one" /><span className="contact-orbit contact-orbit-two" />
         </div>
       </section>

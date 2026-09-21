@@ -6,5 +6,5 @@ assert.equal(portfolio.ru.skills.length, portfolio.en.skills.length);
 assert.equal(portfolio.ru.architectureSteps.length, portfolio.en.architectureSteps.length);
 assert.equal(portfolio.ru.projects[1].source, "");
 assert.equal(portfolio.en.projects[1].source, "");
-assert.equal(getPortfolioContent("en").contactButton, "Message me on GitHub");
-assert.equal(getPortfolioContent("ru").contactButton, "Написать в GitHub");
+assert.equal(getPortfolioContent("en").contactButton, "Email me on baibakovkir@yandex.ru");
+assert.equal(getPortfolioContent("ru").contactButton, "Почта - baibakovkir@yandex.ru");
