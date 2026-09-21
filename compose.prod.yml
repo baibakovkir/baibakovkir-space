@@ -1,6 +1,6 @@
 services:
   portfolio:
-    image: ghcr.io/${IMAGE_REPOSITORY:?IMAGE_REPOSITORY is required}/portfolio:${IMAGE_TAG:?IMAGE_TAG is required}
+    image: ghcr.io/${IMAGE_REPOSITORY:?IMAGE_REPOSITORY is required}:${IMAGE_TAG:?IMAGE_TAG is required}
     ports:
       - "127.0.0.1:13001:3000"
     healthcheck:
